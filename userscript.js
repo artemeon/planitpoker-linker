@@ -2,7 +2,7 @@
 // @name         PlanItPoker Linker
 // @namespace    http://artemeon.de/
 // @version      0.1
-// @description  Add GitHub links to Story Titles
+// @description  Automatically link the issue numbers back to your issue tracking system.
 // @author       Marc Reichel
 // @match        https://www.planitpoker.com/board/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=planitpoker.com
@@ -11,6 +11,30 @@
 
 (function() {
     'use strict';
+    
+    /**
+     * ------------------------------------------------------------------------
+     *  URL Config
+     * ------------------------------------------------------------------------
+     *
+     * Please provide an URL template to your issue tracking
+     * system of choice. Use the {id} placeholder for the
+     * issue ID. It will be replaced automatically.
+     *
+     * Example: https://github.com/artemeon/planitpoker-linker/issues/{id}
+     */
+    const urlTemplate = '';
+
+    /**
+     * ------------------------------------------------------------------------
+     *  Prefix Config
+     * ------------------------------------------------------------------------
+     *
+     * Please provide a prefix for the issue number.
+     *
+     * Example: #
+     */
+    const issuePrefix = '#';
 
     const observeDOM = (function (){
         const MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
@@ -36,8 +60,9 @@
     const addLink = function (node, parentNode) {
         let text = node.innerText;
 
-        const issue = text.match(/#([0-9]+)/);
-        const href = 'https://github.com/artemeon/core-ng/issues/' + issue[1];
+        const regex = new RegExp(`${issuePrefix}([0-9]+)`);
+        const issue = text.match(regex);
+        const href = urlTemplate.replace('{id}', issue[1]);
 
         let linkElement = parentNode.querySelector('[data-github-link]');
 
