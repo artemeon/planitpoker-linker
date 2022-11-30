@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PlanItPoker Linker
 // @namespace    http://artemeon.de/
-// @version      0.1
+// @version      0.2
 // @description  Automatically link the issue numbers back to your issue tracking system.
 // @author       Marc Reichel
 // @match        https://www.planitpoker.com/board/
@@ -11,7 +11,7 @@
 
 (function() {
     'use strict';
-    
+
     /**
      * ------------------------------------------------------------------------
      *  URL Config
@@ -22,6 +22,7 @@
      * issue ID. It will be replaced automatically.
      *
      * Example: https://github.com/artemeon/planitpoker-linker/issues/{id}
+     *
      */
     const urlTemplate = '';
 
@@ -31,10 +32,16 @@
      * ------------------------------------------------------------------------
      *
      * Please provide a prefix for the issue number.
+     * Like '#' for GitHub or 'XYZ-' for Jira.
      *
-     * Example: #
      */
     const issuePrefix = '#';
+    
+    /**
+     * ========================================================================
+     * END OF CONFIG! DO NOT EDIT ANYTHING BELOW!
+     * ========================================================================
+     */
 
     const observeDOM = (function (){
         const MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
