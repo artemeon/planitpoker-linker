@@ -12,7 +12,7 @@
    <img width="69" alt="image" src="https://user-images.githubusercontent.com/7645035/204909801-241443fa-e465-4544-9e14-31ffde963f2a.png">
 3. Create a new script.
    
-   <img width="260" alt="screenshot 22" src="https://user-images.githubusercontent.com/7645035/204909989-1b8da792-f297-4c52-814f-bc0087b40e81.png">
+   <img width="348" alt="screenshot 23" src="https://user-images.githubusercontent.com/7645035/204914920-92953151-cfe6-4954-8b61-d24731c36ee7.png">
 4. In the Editor paste the code from [userscript.js](userscript.js)
-5. Configure the `urlTemplate` and `issuePrefix` variables like documented.
+5. Configure the `urlTemplate` and `issuePrefix` variables in the script like documented.
 6. Save.
