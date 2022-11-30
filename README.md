@@ -5,7 +5,7 @@
 1. Install Tampermonkey in your browser (if you have not already):
    - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - [Edge](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd)
-   - [Safari](https://apps.apple.com/app/apple-store/id1482490089) (2,49€)
+   - [Safari](https://apps.apple.com/app/apple-store/id1482490089)
    - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 2. Click the Tampermonkey Icon in your Browser.
 
