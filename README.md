@@ -14,4 +14,5 @@
    
    <img width="260" alt="screenshot 22" src="https://user-images.githubusercontent.com/7645035/204909989-1b8da792-f297-4c52-814f-bc0087b40e81.png">
 4. In the Editor paste the code from [userscript.js](userscript.js)
-5. Save.
+5. Configure the `urlTemplate` and `issuePrefix` variables like documented.
+6. Save.
