@@ -1,4 +1,4 @@
-# planitpoker-linker
+# PlanItPoker Linker
 
 ## 🚀 Install
 
